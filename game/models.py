@@ -15,3 +15,6 @@ class Alliance(models.Model):
     ally_register_time = models.IntegerField(default=0)
     ally_description = models.TextField()
     ally_web = models.CharField(max_length=255, default='')
+    ally_text = models.TextField()
+    ally_image = models.CharField(max_length=255, default='')
+    ally_request = models.CharField(max_length=1000, null=True, default=None)
